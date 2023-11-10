@@ -26,6 +26,6 @@ Route::view('/register', 'Authentication/register',[
     'title' => 'Signup'
 ]);
 
-Route::post('perform-register', [AuthController::class, 'perfomRegister']);
-
+Route::post('perform-register', [AuthController::class, 'performRegister']);
+Route::post('perform-login', [AuthController::class, 'performLogin']);
 

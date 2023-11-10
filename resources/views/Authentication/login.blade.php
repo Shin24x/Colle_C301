@@ -21,17 +21,26 @@
                     <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
                   </div>
   
-                  <form>
+                  <form style="width: 23rem;" action="perform-login" method="POST">
+                    @if ($errors->any())
+                    <div class="alert alert-danger">
+                        @foreach($errors->all() as $err)
+                            <li>{{ $err }} </li>
+                        @endforeach
+                    </div>
+                    @endif
+                    @csrf
+                    
                     <p>Please login to your account</p>
   
                     <div class="form-outline mb-4">
-                      <input type="email" id="form2Example11" class="form-control"
-                        placeholder="Phone number or email address" />
-                      <label class="form-label" for="form2Example11">Username</label>
+                      <input name="log_email" type="email" id="form2Example11" class="form-control"
+                        placeholder="email address" />
+                      <label class="form-label" for="form2Example11">Email</label>
                     </div>
   
                     <div class="form-outline mb-4">
-                      <input type="password" id="form2Example22" class="form-control" />
+                      <input name="log_password" type="password" id="form2Example22" class="form-control" />
                       <label class="form-label" for="form2Example22">Password</label>
                     </div>
   

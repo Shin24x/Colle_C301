@@ -2,8 +2,6 @@
 <html lang="en">
 @include('components/header')
 
-
-
 <body>
     <div class="container">
 <section class="h-100 gradient-form" style="background-color: #eee;">
@@ -37,16 +35,16 @@
                       <label class="form-label" for="form2Example11">Full Name</label>
                     </div>
                     <div class="form-outline mb-4">
-                      <input type="email" id="text2" class="form-control"name="reg_email">
+                      <input type="email" id="text2" class="form-control"name="reg_email"/>
                       <label class="form-label" for="form2Example11">Email</label>
                     </div>
-                    <div class="form-outline mb-4" name="password">
-                      <input type="password" id="text3" class="form-control" />
+                    <div class="form-outline mb-4" >
+                      <input type="password" id="text3" class="form-control" name="password"/>
                       <label class="form-label" for="form2Example11">Password</label>
                     </div>
 
-                    <div class="form-outline mb-4" name="password_confirmation">
-                      <input type="password" id="text4" class="form-control" />
+                    <div class="form-outline mb-4" >
+                      <input type="password" id="text4" class="form-control" name="password_confirmation"/>
                       <label class="form-label" for="form2Example11">Confirm Password</label>
                     </div>
   
