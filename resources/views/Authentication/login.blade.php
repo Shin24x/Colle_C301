@@ -34,18 +34,17 @@
                     <p>Please login to your account</p>
   
                     <div class="form-outline mb-4">
-                      <input name="log_email" type="email" id="form2Example11" class="form-control"
-                        placeholder="email address" />
+                      <input type="email" id="text2" class="form-control"name="log_email"/>
                       <label class="form-label" for="form2Example11">Email</label>
                     </div>
   
-                    <div class="form-outline mb-4">
-                      <input name="log_password" type="password" id="form2Example22" class="form-control" />
-                      <label class="form-label" for="form2Example22">Password</label>
+                    <div class="form-outline mb-4" >
+                      <input type="password" id="text3" class="form-control" name="log_password"/>
+                      <label class="form-label" for="form2Example11">Password</label>
                     </div>
   
                     <div class="text-center pt-1 mb-5 pb-1">
-                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
                         in</button>
                       <a class="text-muted" href="#!">Forgot password?</a>
                     </div>

@@ -38,6 +38,10 @@
                       <input type="email" id="text2" class="form-control"name="reg_email"/>
                       <label class="form-label" for="form2Example11">Email</label>
                     </div>
+                    <div class="form-outline mb-4">
+                      <input type="text" id="text2" class="form-control"name="reg_uname"/>
+                      <label class="form-label" for="form2Example11">Username</label>
+                    </div>
                     <div class="form-outline mb-4" >
                       <input type="password" id="text3" class="form-control" name="password"/>
                       <label class="form-label" for="form2Example11">Password</label>

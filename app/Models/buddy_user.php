@@ -11,11 +11,14 @@ class buddy_user extends Model
     Protected $casts = [
         'full_name' => 'string',
         'email' => 'string',
+        'uname' => 'string',
         'pword' => 'string',
     ];
     protected $fillable = [
         'reg_full_name',
         'reg_email',
+        'reg_uname',
         'password'
     ];
+    public $timestamps = false;
 }

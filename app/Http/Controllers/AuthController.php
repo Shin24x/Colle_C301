@@ -11,6 +11,7 @@ class AuthController extends Controller
         $request->validate([
             'reg_full_name' => 'required', 
             'reg_email' => 'required | email',
+            'reg_uname' => 'required | max:40 | min: 3,',
             'password' => 'required | max:40 | min: 8, | confirmed',
             'password_confirmation' => 'required'
         ]);
@@ -19,6 +20,7 @@ class AuthController extends Controller
     $buddy_users->full_name = $request->input('reg_full_name');
     $buddy_users->email = $request->input('reg_email');
     $buddy_users->pword = $request->input('password');
+    $buddy_users->uname = $request->input('reg_uname');
     $buddy_users->date_modified = date("Y-m-d");
     $buddy_users->date_created = date("Y-m-d");
     $buddy_users->save();
@@ -26,13 +28,13 @@ class AuthController extends Controller
     return response ("Success!!");
 }
 
-function performLogin(Request $request){
-$request->validate([
-    'log_email' => 'required | email',
-    'log_password' => 'required | confirmed',
-]);
+    function performLogin(Request $request){
+        $request->validate([
+            'log_email' => 'required | email',
+            'log_password' => 'required'
+        ]);
 
-$user = buddy_user::where('email',$request->input('log_email'))
+    $user = buddy_user::where('email',$request->input('log_email'))
                     ->where('pword',$request->input('log_password'))
                     ->first();
 
