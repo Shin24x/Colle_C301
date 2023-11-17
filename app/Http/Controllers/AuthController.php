@@ -23,9 +23,10 @@ class AuthController extends Controller
     $buddy_users->uname = $request->input('reg_uname');
     $buddy_users->date_modified = date("Y-m-d");
     $buddy_users->date_created = date("Y-m-d");
+    $buddy_users->user_type = 'admin';
     $buddy_users->save();
     
-    return response ("Success!!");
+    return redirect()->intended('/');
 }
 
     function performLogin(Request $request){
@@ -38,10 +39,12 @@ class AuthController extends Controller
                     ->where('pword',$request->input('log_password'))
                     ->first();
 
-if($user->is_active == 0){
+if       ($user->is_active == 0){
     return response('Your Account is inactive!');
 } else if($user->is_banned == 1){
     return response('Your Account is Banned!');
+} else if($user->user_type == "admin"){
+    return response('Your Account is Admin!');
 } else{
     return response ("Success!!");
         }

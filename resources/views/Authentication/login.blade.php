@@ -34,7 +34,7 @@
                     <p>Please login to your account</p>
   
                     <div class="form-outline mb-4">
-                      <input type="email" id="text2" class="form-control"name="log_email"/>
+                      <input value="{{old('log_email')}}" type="email" id="text2" class="form-control"name="log_email"/>
                       <label class="form-label" for="form2Example11">Email</label>
                     </div>
   

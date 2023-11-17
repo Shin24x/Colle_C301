@@ -31,15 +31,15 @@
                     <p>Please Sign up</p>
                    
                     <div class="form-outline mb-4">
-                      <input type="text" id="text1" class="form-control"name="reg_full_name"/>
+                      <input value="{{old('reg_full_name')}}" type="text" id="text1" class="form-control"name="reg_full_name"/>
                       <label class="form-label" for="form2Example11">Full Name</label>
                     </div>
                     <div class="form-outline mb-4">
-                      <input type="email" id="text2" class="form-control"name="reg_email"/>
+                      <input value="{{old('reg_email')}}" type="email" id="text2" class="form-control"name="reg_email"/>
                       <label class="form-label" for="form2Example11">Email</label>
                     </div>
                     <div class="form-outline mb-4">
-                      <input type="text" id="text2" class="form-control"name="reg_uname"/>
+                      <input value="{{old('reg_uname')}}" type="text" id="text2" class="form-control"name="reg_uname"/>
                       <label class="form-label" for="form2Example11">Username</label>
                     </div>
                     <div class="form-outline mb-4" >
@@ -53,13 +53,13 @@
                     </div>
   
                     <div class="text-center pt-1 mb-5 pb-1">
-                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Sign in</button>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Sign in</button>
 
                     </div>
   
                     <div class="d-flex align-items-center justify-content-center pb-4">
                       <p class="mb-0 me-2">Already have an account?</p>
-                      <a href="../"><button type="submit" class="btn btn-outline-danger">Login</a></button>
+                      <a href="/"><button type="button" class="btn btn-outline-danger">Login</a></button>
                     </div>
   
                   </form>
