@@ -15,7 +15,8 @@ class AuthController extends Controller
             'password' => 'required | max:40 | min: 8, | confirmed',
             'password_confirmation' => 'required'
         ]);
-    
+ 
+
     $buddy_users = new buddy_user();
     $buddy_users->full_name = $request->input('reg_full_name');
     $buddy_users->email = $request->input('reg_email');
