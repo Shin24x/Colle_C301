@@ -28,6 +28,9 @@ Route::view('/register', 'Authentication/register',[
 Route::view('/logregister', 'Authentication/loginregister',[
     'title' => 'Login Or Register'
 ]);
+Route::view('/home', 'Dashboard/home',[
+    'title' => 'Dashboard'
+]);
 
 Route::post('perform-register', [AuthController::class, 'performRegister']);
 Route::post('perform-login', [AuthController::class, 'performLogin']);
