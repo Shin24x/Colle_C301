@@ -21,15 +21,8 @@
                     <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
                   </div>
   
-                  <form style="width: 23rem;" action="perform-login" method="POST">
-                    @if ($errors->any())
-                    <div class="alert alert-danger">
-                        @foreach($errors->all() as $err)
-                            <li>{{ $err }} </li>
-                        @endforeach
-                    </div>
-                    @endif
-                    @csrf
+                  <form style="width: 23rem;" method="POST">
+
                     
                     <p>Please login to your account</p>
   

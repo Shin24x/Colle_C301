@@ -19,14 +19,8 @@ Route::get('/', function () {
 Route::view('dashboard', 'dashboard',[
     'title' => 'Main Dashboard'
 ]); 
-Route::view('/', 'Authentication/login',[
+Route::view('/', 'Authentication/loginregister',[
     'title' => 'Login'
-]);
-Route::view('/register', 'Authentication/register',[
-    'title' => 'Signup'
-]);
-Route::view('/logregister', 'Authentication/loginregister',[
-    'title' => 'Login Or Register'
 ]);
 Route::view('/home', 'Dashboard/home',[
     'title' => 'Dashboard'
