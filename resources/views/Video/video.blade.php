@@ -7,7 +7,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Library Management System</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/video.css') }}"  />
   </head>
   <body>
   
@@ -16,7 +16,7 @@
       <div class="logo_item">
         
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="{{ asset('assets/images/TS Logo.png') }}" alt="">TECH SKILL
+        <img src="img/TS Logo.png" alt="">TECH SKILL
       </div>
 
 
@@ -129,15 +129,15 @@
     <nav>
       <div class="flex-container">
         <div class="box" onclick="menuphppop()">
-              <img src="{{ asset('assets/images/php.png') }}">
+              <img src="img/php.png">
               <p>PHP: Hypertext Preprocessor</p>
           </div>
           <div class="box" onclick="menupypop()">
-              <img src="{{ asset('assets/images/Python.png') }}">
+              <img src="img/Python.png">
               <p>Python</p>
           </div>
           <div class="box" onclick="menusqlpop()">
-            <img src="{{ asset('assets/images/mySql.png') }}">
+            <img src="img/mySql.png">
             <p>Structured Query Language</p>
         </div>
       </div>
@@ -200,20 +200,7 @@
 
 </div> 
 
-<div id="main-content">
-    <!-- Video content will be loaded here -->
-    <br><br><br><br>
-    <div class="video-container">
-    <h1 class="video" id="Title">Videos</h1>
-    <br><br><br><br>
-    <h1 class="video-title" id="program">What is HTML?</h1>
-    </div>
-    <div style="width: 300px; word-wrap: break-word;"></div>
-    <h3 class="video-title" id="htmlDescription">HTML stands for Hypertext Markup Language. It's the standard language used to create and design web pages. HTML provides the structure and content of a webpage by using a markup system of tags, defining elements such as headings, paragraphs, images, links, and more.</h3>
-    <video id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
-        <source src="vid/HTML Tutorial for Beginners HTML Crash Course.mp4" type="video/mp4">
-    </video>
-</div>
+
 
 
 
@@ -281,10 +268,8 @@
       
     </div>
 
-  
-
     <!-- JavaScript -->
-    <script src="{{ asset('assets/js/homejs.js') }}"></script>
+    <script src="{{ asset('assets/js/video.js') }}"></script>
     
 
 
