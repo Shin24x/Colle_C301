@@ -34,19 +34,6 @@ darkLight.addEventListener("click", () => {
     darkLight.classList.replace("bx-moon", "bx-sun");
   }
 });
-const darkLightButton = document.getElementById('darkLight');
-const titles = document.querySelectorAll('h1, h3');
-
-darkLightButton.addEventListener('click', function() {
-  // Toggle a 'dark-mode' class on the body
-  document.body.classList.toggle('dark-mode');
-
-  // Toggle a 'white-text' class on all h1 and h3 elements
-  titles.forEach(title => {
-    title.classList.toggle('white-text');
-  });
-});
-
 
 submenuItems.forEach((item, index) => {
   item.addEventListener("click", () => {

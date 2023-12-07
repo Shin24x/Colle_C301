@@ -61,7 +61,7 @@
 		
 		<ul class="menu_items">
           <li class="item">
-            <a href="#" class="nav_link">
+            <a href="video" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bxs-video"></i>
               </span>
@@ -199,24 +199,6 @@
   
 
 </div> 
-
-<div id="main-content">
-    <!-- Video content will be loaded here -->
-    <br><br><br><br>
-    <div class="video-container">
-    <h1 class="video" id="Title">Videos</h1>
-    <br><br><br><br>
-    <h1 class="video-title" id="program">What is HTML?</h1>
-    </div>
-    <div style="width: 300px; word-wrap: break-word;"></div>
-    <h3 class="video-title" id="htmlDescription">HTML stands for Hypertext Markup Language. It's the standard language used to create and design web pages. HTML provides the structure and content of a webpage by using a markup system of tags, defining elements such as headings, paragraphs, images, links, and more.</h3>
-    <video id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
-        <source src="vid/HTML Tutorial for Beginners HTML Crash Course.mp4" type="video/mp4">
-    </video>
-</div>
-
-
-
 
 
   <!-- POP UP -->

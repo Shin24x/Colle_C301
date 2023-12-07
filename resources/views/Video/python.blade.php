@@ -9,8 +9,37 @@
     <title>Library Management System</title>
     <link rel="stylesheet" href="{{ asset('assets/css/video.css') }}" />
   </head>
+  <style>
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
+    }
+
+    video {
+        margin: auto;
+        display: block; /* This ensures that the margin: auto works */
+        width: 640px; /* Set your desired width */
+        height: 360px; /* Set your desired height */
+    }
+</style>
+
   <body>
-  
+    <br><br><br><br>
+    <div class="video-container">
+    <h1 class="video" id="Title">Videos</h1>
+    <br><br><br><br>
+    <h1 class="video-title" id="program">What is Python?</h1>
+    </div>
+    <div style="width: 300px; word-wrap: break-word;"></div>
+    <h3 class="video-title">
+      Python is a high-level, versatile programming language known for its simplicity and readability. It's designed to be easy to understand and write, making it suitable for beginners and experienced programmers alike. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</h3>
+    <video id="pythonTutorial" controls>
+                <source src="{{ asset('assets/vids/Python Tutorial - Python Full Course for Beginners.mp4') }}" type="video/mp4">
+    </video>
     <!-- navbar -->
     <nav class="navbar">
       <div class="logo_item">
@@ -68,7 +97,7 @@
               <span class="navlink">Videos</span>
             </a>
           </li>
-
+  
 		  <ul class="menu_items">
           <li class="item">
             <a href="#" class="nav_link">
@@ -109,48 +138,8 @@
         </div>
       </div>
     </nav>
-    <main>
-      <nav>
-        <div class="flex-container">
-          <div class="box" onclick="menujavapop()">
-                <img src="{{ asset('assets/images/Java.png') }}">
-                <a href="java">Java</a>
-            </div>
-            <div class="box" onclick="menuhtmlpop()">
-                <img src="{{ asset('assets/images/HTML.png') }}">
-                <a href="html">Hyper Text Markup Language</a>
-            </div>
-            <div class="box" onclick="menujspop()">
-              <img src="{{ asset('assets/images/Javascript.png') }}">
-              <a href="javascript">JavaScript</a>
-          </div>
-        </div>
-    </nav>
-    <nav>
-      <div class="flex-container">
-        <div class="box" onclick="menuphppop()">
-              <img src="{{ asset('assets/images/php.png') }}">
-              <a href="php">PHP: Hypertext Preprocessor</a>
-          </div>
-          <div class="box" onclick="menupypop()">
-              <img src="{{ asset('assets/images/Python.png') }}">
-              <a href="python">Python</a>
-          </div>
-          <div class="box" onclick="menusqlpop()">
-            <img src="{{ asset('assets/images/mySql.png') }}">
-            <a href="mysql">Structured Query Language</a>
-        </div>
-      </div>
-  </nav>
-    </main>
 
-      
-    </div>
     <!-- JavaScript -->
-    <script src="{{ asset('assets/js/video.css') }}"></script>
-    
-
-
-
+    <script src="script.js"></script>
   </body>
 </html>

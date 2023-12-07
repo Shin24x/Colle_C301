@@ -29,6 +29,27 @@ Route::view('/video', 'Video/video',[
     'title' => 'Videos'
 ]);
 
+
+Route::view('/html', 'Video/html',[
+    'title' => 'html'
+]);
+Route::view('/java', 'Video/java',[
+    'title' => 'java'
+]);
+Route::view('/javascript', 'Video/javascript',[
+    'title' => 'javascript'
+]);
+Route::view('/mysql', 'Video/mysql',[
+    'title' => 'mysql'
+]);
+Route::view('/php', 'Video/php',[
+    'title' => 'php'
+]);
+Route::view('/python', 'Video/python',[
+    'title' => 'python'
+]);
+
+
 Route::post('perform-register', [AuthController::class, 'performRegister']);
 Route::post('perform-login', [AuthController::class, 'performLogin']);
 
