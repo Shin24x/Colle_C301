@@ -206,9 +206,10 @@
       <h2>Java Difficulty</h2>
       
        <!--<button onclick="closePopup()">Cancel</button>-->
-      <button onclick="easybtn()">Easy</button>
-      <button onclick="mediumbtn()">Medium</button>
-      <button onclick="hardbtn()">Hard</button>
+       
+      <button onclick="javaeasybtn()">Easy</button>
+      <button onclick="javamediumbtn()">Medium</button>
+      <button onclick="javahardbtn()">Hard</button>
 	  <button onclick="exitbtnjava()">Exit</button>
       
     </div>
@@ -216,9 +217,9 @@
     <div class="popup" id="info-htmlpop">
       <h2>HTML Difficulty</h2>
       <!--<button onclick="closePopup()">Cancel</button>-->
-      <button onclick="easybtn()">Easy</button>
-      <button onclick="mediumbtn()">Medium</button>
-      <button onclick="hardbtn()">Hard</button>
+      <button onclick="htmleasybtn()">Easy</button>
+      <button onclick="htmlmediumbtn()">Medium</button>
+      <button onclick="htmlhardbtn()">Hard</button>
 	  <button onclick="exitbtnhtml()">Exit</button>
       
     </div>
@@ -226,9 +227,9 @@
     <div class="popup" id="info-jspop">
       <h2>JS Difficulty</h2>
        <!--<button onclick="closePopup()">Cancel</button>-->
-      <button onclick="easybtn()">Easy</button>
-      <button onclick="mediumbtn()">Medium</button>
-      <button onclick="hardbtn()">Hard</button>
+      <button onclick="jseasybtn()">Easy</button>
+      <button onclick="jsmediumbtn()">Medium</button>
+      <button onclick="jshardbtn()">Hard</button>
 	  <button onclick="exitbtnjs()">Exit</button>
       
     </div>
@@ -256,9 +257,9 @@
     <div class="popup" id="info-sqlpop">
       <h2>SQL Difficulty</h2>
        <!--<button onclick="closePopup()">Cancel</button>-->
-      <button onclick="easybtn()">Easy</button>
-      <button onclick="mediumbtn()">Medium</button>
-      <button onclick="hardbtn()">Hard</button>
+      <button onclick="sqleasybtn()">Easy</button>
+      <button onclick="sqlmediumbtn()">Medium</button>
+      <button onclick="sqlhardbtn()">Hard</button>
 	  <button onclick="exitbtnsql()">Exit</button>
       
     </div>

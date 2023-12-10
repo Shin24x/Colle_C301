@@ -140,15 +140,52 @@ function exitbtnphp() {
 function exitbtnsql() {
   document.getElementById("info-sqlpop" ).style.display = "none";
 }
-function easybtn() {
-  // Add your code here for the OK button action
+function javaeasybtn() {
+  window.location.href = "javaeasy";
 }
-function mediumbtn() {
-  // Add your code here for the OK button action
+function javamediumbtn() {
+  window.location.href = "javamedium";
 }
-function hardbtn() {
-  // Add your code here for the OK button action
+function javahardbtn() {
+  window.location.href = "javahard";
 }
-function javanxt() {
-  // Add your code here for the OK button action
+
+function htmleasybtn() {
+  window.location.href = "htmleasy";
+}
+function htmlmediumbtn() {
+  window.location.href = "htmlmedium";
+}
+function htmlhardbtn() {
+  window.location.href = "htmlhard";
+}
+
+function jseasybtn() {
+  window.location.href = "jseasy";
+}
+function jsmediumbtn() {
+  window.location.href = "jsmedium";
+}
+function jshardbtn() {
+  window.location.href = "jshard";
+}
+
+function sqleasybtn() {
+  window.location.href = "sqleasy";
+}
+function sqlmediumbtn() {
+  window.location.href = "sqlmedium";
+}
+function sqlhardbtn() {
+  window.location.href = "sqlhard";
+}
+
+function sqleasybtn() {
+  window.location.href = "sqleasy";
+}
+function sqlmediumbtn() {
+  window.location.href = "sqlmedium";
+}
+function sqlhardbtn() {
+  window.location.href = "sqlhard";
 }

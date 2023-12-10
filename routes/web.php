@@ -49,6 +49,56 @@ Route::view('/python', 'Video/python',[
     'title' => 'python'
 ]);
 
+//java modules
+Route::view('/javaeasy', 'modules/java/javaeasy',[
+    'title' => 'javaeasy'
+]);
+Route::view('/javamedium', 'modules/java/javamedium',[
+    'title' => 'javamedium'
+]);
+Route::view('/javahard', 'modules/java/javahard',[
+    'title' => 'javahard'
+]);
+//html modules
+Route::view('/htmleasy', 'modules/html/htmleasy',[
+    'title' => 'htmleasy'
+]);
+Route::view('/htmlmedium', 'modules/html/htmlmedium',[
+    'title' => 'htmlmedium'
+]);
+Route::view('/htmlhard', 'modules/html/htmlhard',[
+    'title' => 'htmlhard'
+]);
+//js modules
+Route::view('/jseasy', 'modules/javascript/jseasy',[
+    'title' => 'jseasy'
+]);
+Route::view('/jsmedium', 'modules/javascript/jsmedium',[
+    'title' => 'jsmedium'
+]);
+Route::view('/jshard', 'modules/javascript/jshard',[
+    'title' => 'jshard'
+]);
+//mysql modules
+Route::view('/sqleasy', 'modules/mysql/sqleasy',[
+    'title' => 'sqleasy'
+]);
+Route::view('/sqlmedium', 'modules/mysql/sqlmedium',[
+    'title' => 'sqlmedium'
+]);
+Route::view('/sqlhard', 'modules/mysql/sqlhard',[
+    'title' => 'sqlhard'
+]);
+//php modules
+Route::view('/phpeasy', 'modules/mysql/sqleasy',[
+    'title' => 'phpeasy'
+]);
+Route::view('/sqlmedium', 'modules/mysql/sqlmedium',[
+    'title' => 'sqlmedium'
+]);
+Route::view('/sqlhard', 'modules/mysql/sqlhard',[
+    'title' => 'sqlhard'
+]);
 
 Route::post('perform-register', [AuthController::class, 'performRegister']);
 Route::post('perform-login', [AuthController::class, 'performLogin']);
