@@ -140,15 +140,17 @@ function exitbtnphp() {
 function exitbtnsql() {
   document.getElementById("info-sqlpop" ).style.display = "none";
 }
-function easybtn() {
-  // Add your code here for the OK button action
+function javavid() {
+  window.location.href = "java";
 }
-function mediumbtn() {
-  // Add your code here for the OK button action
+function htmlvid() {
+  window.location.href = "html";
 }
-function hardbtn() {
-  // Add your code here for the OK button action
+function jsvid() {
+  window.location.href = "javascript";
 }
 function javanxt() {
   // Add your code here for the OK button action
 }
+
+

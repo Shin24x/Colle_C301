@@ -112,15 +112,15 @@
     <main>
       <nav>
         <div class="flex-container">
-          <div class="box" onclick="menujavapop()">
+          <div class="box" onclick="javavid()">
                 <img src="{{ asset('assets/images/Java.png') }}">
                 <a href="java">Java</a>
             </div>
-            <div class="box" onclick="menuhtmlpop()">
+            <div class="box" onclick="htmlvid()">
                 <img src="{{ asset('assets/images/HTML.png') }}">
                 <a href="html">Hyper Text Markup Language</a>
             </div>
-            <div class="box" onclick="menujspop()">
+            <div class="box" onclick="jsvid()">
               <img src="{{ asset('assets/images/Javascript.png') }}">
               <a href="javascript">JavaScript</a>
           </div>

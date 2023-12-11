@@ -15,7 +15,10 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--white-color);
 }
 
@@ -39,7 +42,7 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 8px;
+  padding: 15px 15px;
   z-index: 1000;
   box-shadow: 0 0 2px var(--grey-color-light);
 }
@@ -344,19 +347,20 @@ nav {
 }
 
 .box {
-  width: 400px; /* Set your desired width */
-  padding: 100px;
+  width: auto 500%;;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   background-color: #5d89ba;
-  border-radius: 50px;
-  text-align: center;
-  cursor: pointer;
+  border-radius: 15px;
   transition: background-color 0.3s;
-  margin: 5px;
-  flex-grow: 3; /* Allow the box to grow */
+  margin-top: -50px;
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 25px;
+  text-align: left;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -368,123 +372,76 @@ nav {
 }
 
 .box img {
-  width: 220px;
+  width: 500px;
   margin-bottom: 20px; /* Adjust margin as needed */
   height: auto;
 }
 
-.box:hover {
-  background-color: #707070;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 main {
   padding: 100px;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .search_bar {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
   .box {
-    width: calc(50% - 10px); /* Two boxes per row with some margin in between */
+    width: 100%;
+    padding: 10px;
+  }
+
+  .box img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 800px) {
+  .box {
+    width: calc(50% - 10px);
+  }
+
   main {
-    padding: 100px 20px; /* Adjust padding as needed */
+    padding: 100px 20px;
   }
 }
 
 @media (max-width: 500px) {
   .box {
-    width: calc(100% - 10px); /* One box per row with some margin */
+    width: calc(100% - 10px);
   }
 }
 
-/* popup info */
-
-.menupopup {
-  width: 800px;
-  height: 400px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: 5px 5px 10px gray;
-  display: none;
-  border-radius: 20px;
-}
-
-.menupopup h2 {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.menupopup p {
-  text-align: justify;
-  padding: 10px;
-}
-
-.menupopup :hover {
-  color: var(--white-color);
-  background: #FFAF4D;
-}
-
-/* Style the buttons inside the pop up */
-.menupopup button {
-  justify-content: center;
-  display: inline-block;
-  margin: 13px;
-  padding: 10px;
-  border: none;
-  background-color: #5d89ba;
-  color: var(--white-color);
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-/* difficulty pop up */
-.popup {
-  width: 380px;
-  height: 150px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: 5px 5px 10px gray;
-  display: none;
-  border-radius: 20px;
-}
-
-/* Style the content inside the pop up */
-.popup h2 {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.popup p {
-  text-align: justify;
-  padding: 10px;
-}
-
-.popup :hover {
-  color: var(--white-color);
-  background: #FFAF4D;
-}
-
-/* Style the buttons inside the pop up */
-.popup button {
-  display: inline-block;
-  margin: 13px;
-  padding: 10px;
-  border: none;
-  background-color: #5d89ba;
-  color: var(--white-color);
-  border-radius: 10px;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  .box {
+    width: 100%; /* Adjust the width as needed */
+    padding: 10px;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sidebar.close .box {
+    width: 100%; /* Adjust the width as needed when the sidebar is closed */
+  }
 }

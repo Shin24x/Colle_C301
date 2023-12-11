@@ -90,14 +90,25 @@ Route::view('/sqlhard', 'modules/mysql/sqlhard',[
     'title' => 'sqlhard'
 ]);
 //php modules
-Route::view('/phpeasy', 'modules/mysql/sqleasy',[
+Route::view('/phpeasy', 'modules/php/phpeasy',[
     'title' => 'phpeasy'
 ]);
-Route::view('/sqlmedium', 'modules/mysql/sqlmedium',[
-    'title' => 'sqlmedium'
+Route::view('/phpmedium', 'modules/php/phpmedium',[
+    'title' => 'phpmedium'
 ]);
-Route::view('/sqlhard', 'modules/mysql/sqlhard',[
-    'title' => 'sqlhard'
+Route::view('/phphard', 'modules/php/phphard',[
+    'title' => 'phphard'
+]);
+
+//python modules
+Route::view('/pyeasy', 'modules/python/pyeasy',[
+    'title' => 'pyeasy'
+]);
+Route::view('/pymedium', 'modules/python/pymedium',[
+    'title' => 'pymedium'
+]);
+Route::view('/pyhard', 'modules/python/pyhard',[
+    'title' => 'pyhard'
 ]);
 
 Route::post('perform-register', [AuthController::class, 'performRegister']);

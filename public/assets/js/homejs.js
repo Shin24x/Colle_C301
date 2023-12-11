@@ -5,20 +5,38 @@ const submenuItems = document.querySelectorAll(".submenu_item");
 const sidebarOpen = document.querySelector("#sidebarOpen");
 const sidebarClose = document.querySelector(".collapse_sidebar");
 const sidebarExpand = document.querySelector(".expand_sidebar");
+
 sidebarOpen.addEventListener("click", () => sidebar.classList.toggle("close"));
 
 sidebarClose.addEventListener("click", () => {
   sidebar.classList.add("close", "hoverable");
 });
+
 sidebarExpand.addEventListener("click", () => {
   sidebar.classList.remove("close", "hoverable");
 });
+
+// Function to close the sidebar
+function closeSidebar() {
+  sidebar.classList.add("close");
+}
+
+// Event listener for window resize
+window.onresize = function () {
+  // Check window width
+  if (window.innerWidth < 1000) {
+    closeSidebar(); // Close sidebar if the window is smaller than 768 pixels
+  } else {
+    sidebar.classList.remove("close");
+  }
+};
 
 sidebar.addEventListener("mouseenter", () => {
   if (sidebar.classList.contains("hoverable")) {
     sidebar.classList.remove("close");
   }
 });
+
 sidebar.addEventListener("mouseleave", () => {
   if (sidebar.classList.contains("hoverable")) {
     sidebar.classList.add("close");
@@ -28,7 +46,6 @@ sidebar.addEventListener("mouseleave", () => {
 darkLight.addEventListener("click", () => {
   body.classList.toggle("dark");
   if (body.classList.contains("dark")) {
-    document.setI
     darkLight.classList.replace("bx-sun", "bx-moon");
   } else {
     darkLight.classList.replace("bx-moon", "bx-sun");
@@ -46,7 +63,7 @@ submenuItems.forEach((item, index) => {
   });
 });
 
-if (window.innerWidth < 768) {
+if (window.innerWidth < 1000) {
   sidebar.classList.add("close");
 } else {
   sidebar.classList.remove("close");
@@ -180,12 +197,22 @@ function sqlhardbtn() {
   window.location.href = "sqlhard";
 }
 
-function sqleasybtn() {
-  window.location.href = "sqleasy";
+function phpeasybtn() {
+  window.location.href = "phpeasy";
 }
-function sqlmediumbtn() {
-  window.location.href = "sqlmedium";
+function phpmediumbtn() {
+  window.location.href = "phpmedium";
 }
-function sqlhardbtn() {
-  window.location.href = "sqlhard";
+function phphardbtn() {
+  window.location.href = "phphard";
+}
+
+function pyeasybtn() {
+  window.location.href = "pyeasy";
+}
+function pymediumbtn() {
+  window.location.href = "pymedium";
+}
+function pyhardbtn() {
+  window.location.href = "pyhard";
 }
