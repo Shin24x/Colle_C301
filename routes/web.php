@@ -28,7 +28,12 @@ Route::view('/home', 'Dashboard/home',[
 Route::view('/video', 'Video/video',[
     'title' => 'Videos'
 ]);
-
+Route::view('/library', 'library/library',[
+    'title' => 'library'
+]);
+Route::view('/flashcards', 'flashcards/flashcards',[
+    'title' => 'flashcards'
+]);
 
 Route::view('/html', 'Video/html',[
     'title' => 'html'

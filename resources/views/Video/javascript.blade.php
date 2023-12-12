@@ -79,7 +79,7 @@
 
           <ul class="menu_items">
           <li class="item">
-            <a href="#" class="nav_link">
+            <a href="library" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bxs-grid-alt"></i>
               </span>
@@ -94,16 +94,6 @@
                 <i class="bx bxs-video"></i>
               </span>
               <span class="navlink">Videos</span>
-            </a>
-          </li>
-  
-		  <ul class="menu_items">
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bxs-card"></i>
-              </span>
-              <span class="navlink">Flashcard</span>
             </a>
           </li>
 		  
