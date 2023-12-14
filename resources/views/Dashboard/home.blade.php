@@ -129,8 +129,7 @@
  <!-- POP UP -->
  <div class="menupopup" id="info-menujavapopup">
   <h2>Java information</h2>
-  <p>This is some information about the selected language.</p>
-  <p>This is some information about the selected language.</p>
+  <p>Java is a robust, object-oriented, and platform-independent programming language. Known for its "Write Once, Run Anywhere" philosophy, Java is widely used in building enterprise-level applications, mobile apps (Android), and web applications. Its strong type system, garbage collection, and extensive libraries make it a popular choice for large-scale projects.</p>
   <button onclick="javapop()">Next</button>
   <button onclick="closePopupjava()">Cancel</button>
   
@@ -138,8 +137,7 @@
 
 <div class="menupopup" id="info-menuhtmlpopup">
   <h2>HTML information</h2>
-  <p>This is some information about the selected language.</p>
-  <p>This is some information about the selected language.</p>
+  <p>HTML is the standard markup language used to create the structure of web pages. It defines the elements on a web page and their attributes. HTML is essential for every web developer, as it forms the backbone of content on the internet. It works in conjunction with CSS (Cascading Style Sheets) and JavaScript to create visually appealing and interactive websites.</p>
   <button onclick="htmlpop()">Next</button>
   <button onclick="closePopuphtml()">Cancel</button>
   
@@ -147,8 +145,7 @@
 
 <div class="menupopup" id="info-menujspopup">
   <h2>JavaScript information</h2>
-  <p>This is some information about the selected language.</p>
-  <p>This is some information about the selected language.</p>
+  <p>JavaScript is a versatile, high-level programming language primarily used for web development. It allows you to add dynamic content, interactivity, and enhance the user experience on websites. JS can be executed in the browser and on the server-side using Node.js. It's a fundamental language for front-end development, and its asynchronous nature makes it powerful for handling events and requests.</p>
   <button onclick="jspop()">Next</button>
   <button onclick="closePopupjs()">Cancel</button>
   
@@ -156,8 +153,7 @@
 
 <div class="menupopup" id="info-menuphppopup">
   <h2>PHP information</h2>
-  <p>This is some information about the selected language.</p>
-  <p>This is some information about the selected language.</p>
+  <p>PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development. It's embedded in HTML and executed on the server, generating dynamic content. PHP is widely used for building websites and web applications. It's known for its simplicity, flexibility, and strong community support.</p>
   <button onclick="phppop()">Next</button>
   <button onclick="closePopupphp()">Cancel</button>
   
@@ -165,8 +161,7 @@
 
 <div class="menupopup" id="info-menupypopup">
   <h2>Python information</h2>
-  <p>This is some information about the selected language.</p>
-  <p>This is some information about the selected language.</p>
+  <p>Python is a high-level, interpreted, and general-purpose programming language. It emphasizes readability and ease of use, making it an excellent choice for beginners. Python supports multiple paradigms and has a vast ecosystem of libraries. It's used in web development, data analysis, artificial intelligence, machine learning, and more.</p>
   <button onclick="pypop()">Next</button>
   <button onclick="closePopuppy()">Cancel</button>
   
@@ -174,8 +169,7 @@
 
 <div class="menupopup" id="info-menusqlpopup">
   <h2>MySQL information</h2>
-  <p>This is some information about the selected language.</p>
-  <p>This is some information about the selected language.</p>
+  <p>MySQL is a relational database management system (RDBMS) that uses SQL (Structured Query Language) for managing and manipulating data. It's open-source, scalable, and commonly used in web applications. MySQL is known for its speed, reliability, and ease of use. It plays a crucial role in storing and retrieving data efficiently.</p>
   <button onclick="sqlpop()">Next</button>
   <button onclick="closePopupsql()">Cancel</button>
   

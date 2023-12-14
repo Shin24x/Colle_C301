@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ts_user;
 use App\Services\BreadcrumbService;
+use Illuminate\Support\Facades\DB;
+use App\Models\QuizQuestion;
 
 class AuthController extends Controller
 {
@@ -14,6 +16,23 @@ class AuthController extends Controller
     {
         $this->breadcrumbService = $breadcrumbService;
     }
+
+    public function showHtmlEasyQuiz()
+    {
+        // Retrieve HTML easy questions
+        $htmlEasyQuestions = QuizQuestion::where('module_id', 1)
+            ->where('difficulty_level', 'easy')
+            ->get();
+
+        // Debugging: Dump and die to check if data is retrieved
+        dd($htmlEasyQuestions);
+
+        // Pass data to the Blade view
+        return view('modules.html.htmleasy', ['htmlEasyQuestions' => $htmlEasyQuestions]);
+    }
+
+    
+
 
     public function performRegister(Request $request)
     {

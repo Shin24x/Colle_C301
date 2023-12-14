@@ -106,14 +106,13 @@
 <p>Callbacks are functions passed as arguments to other functions to be executed later, commonly used in asynchronous operations.</p>
 <p>Example:</p>
 
-// image here 
-
+<img src="{{ asset('assets/images/scripthard1.png') }}">
 <br>
 <h2 style="text-align:left;">Promises</h2>
 <p>Promises represent a value that might not be available yet. They can be in one of three states: pending, fulfilled, or rejected. They help manage asynchronous operations more effectively than callbacks.</p>
 <p>Example:</p>
 
-// image here 
+<img src="{{ asset('assets/images/scripthard2.png') }}">
 
 <br>
 <h2 style="text-align:left;">Async/Await:</h2>
@@ -121,7 +120,7 @@
 <p>Async functions enable writing asynchronous code that looks synchronous, making it easier to read and maintain.</p>
 <p>Example:</p>
 
-// image here 
+<img src="{{ asset('assets/images/scripthard3.png') }}">
 <br>
 <h2 style="text-align:left;">2. Event Loop</h2>
 <p>The Event Loop is a fundamental concept in JavaScript's concurrency model. It manages the execution of code, handling asynchronous operations and callbacks.</p>
@@ -150,22 +149,22 @@
     Microtasks: Executed after the current task and before the Event Loop checks for UI rendering or IO tasks. Examples include Promises (resolved/rejected) and process.nextTick in Node.js.
     </li>
 </ul>
-// image here 
+<img src="{{ asset('assets/images/scripthard4.png') }}">
 
 <p>The output will be:</p>
-// image here 
+<img src="{{ asset('assets/images/scripthard5.png') }}">
 <h4 style="text-align:left;">2. Handling Concurrency and Parallelism</h4>
 
 <p>JavaScript being single-threaded doesn't directly support parallelism, but it can achieve concurrent behavior through techniques like Web Workers and the Worker API. Web Workers allow running scripts in the background without affecting the UI responsiveness.</p>
 <p>Example using Web Workers:</p>
 
-// image here 
+<img src="{{ asset('assets/images/scripthard6.png') }}">
 
 <h4 style="text-align:left;">3. Performance Optimization with Async Operations</h4>
 <p>Optimizing asynchronous operations involves techniques like debouncing and throttling to control the frequency of function executions, reducing unnecessary calls and improving performance.</p>
 <p>Example using debouncing:</p>
 
-// image here 
+<img src="{{ asset('assets/images/scripthard7.png') }}">
 
 <b>Conclusion</b>
 

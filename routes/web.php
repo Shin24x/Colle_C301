@@ -16,6 +16,8 @@ use App\Http\Controllers\AuthController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/html-easy-quiz', [AuthController::class, 'showHtmlEasyQuiz'])->name('html.easy.quiz');
+
 Route::view('dashboard', 'dashboard',[
     'title' => 'Main Dashboard'
 ]); 
@@ -115,6 +117,13 @@ Route::view('/pymedium', 'modules/python/pymedium',[
 Route::view('/pyhard', 'modules/python/pyhard',[
     'title' => 'pyhard'
 ]);
+
+Route::view('/quizhtmleasy', 'quizzes/html/qhtmleasy',[
+    'title' => 'quizhtmleasy'
+]);
+
+
+
 
 Route::post('perform-register', [AuthController::class, 'performRegister']);
 Route::post('perform-login', [AuthController::class, 'performLogin']);

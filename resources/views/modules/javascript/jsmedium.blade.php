@@ -107,7 +107,7 @@
 <h4 style="text-align:left;">A high-level definition</h4>
 <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed1.png') }}">
 <ul>
 <li><b>HTML </b>is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.</li>
 <li><b>CSS </b>is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.</P>
@@ -117,21 +117,21 @@
 <br>
 <h6 style="text-align:left;">HTML</h6>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed2.png') }}">
 
 <p>Then we can add some CSS into the mix to get it looking nice:</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed3.png') }}">
 
-// image here 
+<img src="{{ asset('assets/images/jsmed4.png') }}">
 
 <p>And finally, we can add some JavaScript to implement dynamic behavior:</p>
 <br>
 <h6 style="text-align:left;">JS</h6>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed5.png') }}">
 
-// image here 
+<img src="{{ asset('assets/images/jsmed6.png') }}">
 
 <h4 style="text-align:left;">So what can it really do?</h4>
 <p>The core client-side JavaScript language consists of some common programming features that allow you to do things like:</p>
@@ -146,7 +146,7 @@
 <p>APIs are ready-made sets of code building blocks that allow a developer to implement programs that would otherwise be hard or impossible to implement. They do the same thing for programming that ready-made furniture kits do for home building — it is much easier to take ready-cut panels and screw them together to make a bookshelf than it is to work out the design yourself, go and find the correct wood, cut all the panels to the right size and shape, find the correct-sized screws, and then put them together to make a bookshelf.</p>
 <p>They generally fall into two categories.</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed7.png') }}">
 
 <p><b>Browser APIs </b>are built into your web browser, and are able to expose data from the surrounding computer environment, or do useful complex things. For example:</p>
 <ul>
@@ -166,7 +166,7 @@
 <P>Here we'll actually start looking at some code, and while doing so, explore what actually happens when you run some JavaScript in your page.</p>
 <p>Let's briefly recap the story of what happens when you load a web page in a browser (first talked about in our How CSS works article). When you load a web page in your browser, you are running your code (the HTML, CSS, and JavaScript) inside an execution environment (the browser tab). This is like a factory that takes in raw materials (the code) and outputs a product (the web page).</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed8.png') }}">
 
 <p>A very common use of JavaScript is to dynamically modify HTML and CSS to update a user interface, via the Document Object Model API (as mentioned above). Note that the code in your web documents is generally loaded and executed in the order it appears on the page. Errors may occur if JavaScript is loaded and run before the HTML and CSS that it is intended to modify. You will learn ways around this later in the article, in the Script loading strategies section.</p>
 <br>
@@ -177,7 +177,7 @@
 
 <h6 style="text-align:left;">JavaScript running order</h6>
 <p>When the browser encounters a block of JavaScript, it generally runs it in order, from top to bottom. This means that you need to be careful what order you put things in. For example, let's return to the block of JavaScript we saw in our first example:</p>
-// image here 
+<img src="{{ asset('assets/images/jsmed9.png') }}">
 
 <p>Here we are selecting a button (line 1), then attaching an event listener to it (line 3) so that when the button is clicked, the updateName() code block (lines 5–8) is run. The updateName() code block (these types of reusable code blocks are called "functions") asks the user for a new name, and then inserts that name into the button text to update the display.</p>
 <p>If you swapped the order of the first two lines of code, it would no longer work — instead, you'd get an error returned in the browser developer console — Uncaught ReferenceError: Cannot access 'button' before initialization. This means that the button object has not been initialized yet, so we can't add an event listener to it.</p>
@@ -207,11 +207,11 @@
 <li>Open the file in your web browser and in your text editor. You'll see that the HTML creates a simple web page containing a clickable button.</li>
 <li>Next, go to your text editor and add the following in your head — just before your closing < /head> tag: <br>HTML</li>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed10.png') }}">
 
 <li>Now we'll add some JavaScript inside our <b>< script></b> element to make the page do something more interesting — add the following code just below the "// JavaScript goes here" line: <br>JS</li>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed11.png') }}">
 
 <li>Save your file and refresh the browser — now you should see that when you click the button, a new paragraph is generated and placed below.</li>
 </ol>
@@ -223,22 +223,22 @@
 <li>First, create a new file in the same directory as your sample HTML file. Call it script.js — make sure it has that .js filename extension, as that's how it is recognized as JavaScript.</li>
 <li>Replace your current <b>< script></b> element with the following: <br>JS</li>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed12.png') }}">
 
 <li>Save and refresh your browser, and you should see the same thing! It works just the same, but now we've got our JavaScript in an external file. This is generally a good thing in terms of organizing your code and making it reusable across multiple HTML files. Plus, the HTML is easier to read without huge chunks of script dumped in it.</li>
 <br>
 </ol>
 <h6 style="text-align:left;">Inline JavaScript handlers</h6>
 <p>Note that sometimes you'll come across bits of actual JavaScript code living inside HTML. It might look something like this: <br>JS</p>
-// image here 
+<img src="{{ asset('assets/images/jsmed13.png') }}">
 
 <p>HTML</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed14.png') }}">
 
 <p>You can try this version of our demo below.</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed15.png') }}">
 
 <p>This demo has exactly the same functionality as in the previous two sections, except that the < button> element includes an inline onclick handler to make the function run when the button is pressed.</p>
 
@@ -248,7 +248,7 @@
 <h6 style="text-align:left;">Using addEventListener instead</h6>
 <p>Instead of including JavaScript in your HTML, use a pure JavaScript construct. The querySelectorAll() function allows you to select all the buttons on a page. You can then loop through the buttons, assigning a handler for each using addEventListener(). The code for this is shown below:<br> JS</P>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed16.png') }}">
 
 <p>This might be a bit longer than the onclick attribute, but it will work for all buttons — no matter how many are on the page, nor how many are added or removed. The JavaScript does not need to be changed.</p>
 
@@ -259,13 +259,13 @@
 <p>In the above code examples, in the internal and external examples the JavaScript is loaded and run in the head of the document, before the HTML body is parsed. This could cause an error, so we've used some constructs to get around it.</p>
 <p>In the internal example, you can see this structure around the code:<br>JS</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed17.png') }}">
 
 <p>This is an event listener, which listens for the browser's DOMContentLoaded event, which signifies that the HTML body is completely loaded and parsed. The JavaScript inside this block will not run until after that event is fired, therefore the error is avoided (you'll learn about events later in the course).</p>
 
 <p>In the external example, we use a more modern JavaScript feature to solve the problem, the defer attribute, which tells the browser to continue downloading the HTML content once the <p script> tag element has been reached.<br>HTML</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed18.png') }}">
 
 <p>In this case both the script and the HTML will load simultaneously and the code will work.</p>
 
@@ -277,19 +277,19 @@
 <p>Scripts loaded with the defer attribute will load in the order they appear on the page. They won't run until the page content has all loaded, which is useful if your scripts depend on the DOM being in place (e.g. they modify one or more elements on the page).</p>
 <p>Here is a visual representation of the different script loading methods and what that means for your page:</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed19.png') }}">
 
 <p>This image is from the HTML spec, copied and cropped to a reduced version, under CC BY 4.0 license terms.</p>
 
 <p>For example, if you have the following script elements:<br>HTML</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed20.png') }}">
 
 <p>You can't rely on the order the scripts will load in. jquery.js may load before or after script2.js and script3.js and if this is the case, any functions in those scripts depending on jquery will produce an error because jquery will not be defined at the time the script runs.</p>
 <p>async should be used when you have a bunch of background scripts to load in, and you just want to get them in place as soon as possible. For example, maybe you have some game data files to load, which will be needed when the game actually begins, but for now you just want to get on with showing the game intro, titles, and lobby, without them being blocked by script loading.</p>
 <p>Scripts loaded using the defer attribute (see below) will run in the order they appear in the page and execute them as soon as the script and content are downloaded:<br>HTML</p>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed21.png') }}">
 
 <p>In the second example, we can be sure that jquery.js will load before script2.js and script3.js and that script2.js will load before script3.js. They won't run until the page content has all loaded, which is useful if your scripts depend on the DOM being in place (e.g. they modify one or more elements on the page).</p>
 <p>To summarize:</p>
@@ -312,15 +312,15 @@
 
 <li>A single line comment is written after a double forward slash (//), e.g.<br>JS</li>
 
-// image here 
+  <img src="{{ asset('assets/images/jsmed22.png') }}">
 
 <li>A multi-line comment is written between the strings /* and */, e.g.<br>JS</li>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed23.png') }}">
 
 <li>So for example, we could annotate our last demo's JavaScript with comments like so:<br>JS</li>
 
-// image here 
+<img src="{{ asset('assets/images/jsmed24.png') }}">
 </ul>
 
 
