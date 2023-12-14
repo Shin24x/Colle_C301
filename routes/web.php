@@ -118,12 +118,91 @@ Route::view('/pyhard', 'modules/python/pyhard',[
     'title' => 'pyhard'
 ]);
 
+//quizzes
 Route::view('/quizhtmleasy', 'quizzes/html/qhtmleasy',[
     'title' => 'quizhtmleasy'
 ]);
+Route::view('/quizhtmlmedium', 'quizzes/html/qhtmlmedium',[
+    'title' => 'quizhtmlmedium'
+]);
+Route::view('/quizhtmlmhard', 'quizzes/html/qhtmlhard',[
+    'title' => 'quizhtmlmhard'
+]);
 
+Route::view('/quizjavaeasy', 'quizzes/html/qjavaeasy',[
+    'title' => 'quizjavaeasy'
+]);
+Route::view('/quizjavamedium', 'quizzes/html/qjavamedium',[
+    'title' => 'quizjavamedium'
+]);
+Route::view('/quizjavahard', 'quizzes/html/qjavahard',[
+    'title' => 'quizjavahard'
+]);
 
+Route::view('/quizjseasy', 'quizzes/html/qjseasy',[
+    'title' => 'quizjseasy'
+]);
+Route::view('/quizjsmedium', 'quizzes/html/qjsmedium',[
+    'title' => 'quizjsmedium'
+]);
+Route::view('/quizjshard', 'quizzes/html/qjshard',[
+    'title' => 'quizjshard'
+]);
 
+Route::view('/quizmysqleasy', 'quizzes/html/qsqleasy',[
+    'title' => 'quizmysqleasy'
+]);
+Route::view('/quizmysqlmedium', 'quizzes/html/qsqlmedium',[
+    'title' => 'quizmysqlmedium'
+]);
+Route::view('/quizmysqlhard', 'quizzes/html/qsqlhard',[
+    'title' => 'quizmysqlhard'
+]);
+
+Route::view('/quizphpeasy', 'quizzes/html/qphpeasy',[
+    'title' => 'quizphpeasy'
+]);
+Route::view('/quizphpmedium', 'quizzes/html/qphpmedium',[
+    'title' => 'quizphpmedium'
+]);
+Route::view('/quizphphard', 'quizzes/html/qphphard',[
+    'title' => 'quizphphard'
+]);
+
+Route::view('/quizpythoneasy', 'quizzes/html/qpyeasy',[
+    'title' => 'quizpythoneasy'
+]);
+Route::view('/quizpythonmedium', 'quizzes/html/qpymedium',[
+    'title' => 'quizpythonmedium'
+]);
+Route::view('/quizpythonhard', 'quizzes/html/qpyhard',[
+    'title' => 'quizpythonhard'
+]);
+
+//flashcards
+Route::view('/flashhtml', 'flashcards/flashhtml',[
+    'title' => 'flashhtml'
+]);
+
+Route::view('/flashjava', 'flashcards/flashjava',[
+    'title' => 'flashjava'
+]);
+
+Route::view('/flashjs', 'flashcards/flashjs',[
+    'title' => 'flashjs'
+]);
+
+Route::view('/flashphp', 'flashcards/flashphp',[
+    'title' => 'flashphp'
+]);
+
+Route::view('/flashpy', 'flashcards/flashpy',[
+    'title' => 'flashpy'
+]);
+
+Route::view('/flashsql', 'flashcards/flashsql',[
+    'title' => 'flashsql'
+]);
 
 Route::post('perform-register', [AuthController::class, 'performRegister']);
 Route::post('perform-login', [AuthController::class, 'performLogin']);

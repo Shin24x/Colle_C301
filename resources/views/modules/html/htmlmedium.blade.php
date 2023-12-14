@@ -248,6 +248,7 @@
                 <br>
                     <p>To conclude, HTML (Hypertext Markup Language) is the foundational element of the World Wide Web, serving as a standardized markup language for organizing content online. Its user-friendly nature and adaptability cater to both novices and seasoned developers, facilitating the design of engaging and interactive web pages. Complemented by CSS (Cascading Style Sheets) and JavaScript, HTML plays a pivotal role in shaping the user experience and ensuring smooth communication between browsers and web servers. As technology progresses, HTML evolves with new standards and features, ensuring its continued relevance in the ever-changing field of web development. Ultimately, HTML remains an essential tool for individuals involved in creating and managing online content, embodying the fundamental principles of web design and accessibility.</p> 
 
+                    <br><br>
             </div>
         </div>
       </nav>
