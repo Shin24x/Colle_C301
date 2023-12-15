@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -291,6 +290,47 @@ body.dark {
   display: none;
 }
 
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align the form items to the right */
+}
+
+input[type="radio"] {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+input[type="button"] {
+  background-color: #5d89ba;
+  border: 2px solid white; /* Add a black border */
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 330px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-end; /* Align the button to the right */
+}
+
+input[type="button"]:hover {
+  background-color: #4070f4;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 2%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
 @media screen and (max-width: 768px) {
   #sidebarOpen {
     font-size: 25px;
@@ -347,7 +387,8 @@ nav {
 }
 
 .box {
-  width: auto 500%;;
+  width: auto;  
+  margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 100px;
@@ -361,6 +402,7 @@ nav {
   flex-direction: column;
   text-align: left;
   font-size: 15px;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -385,7 +427,9 @@ nav {
 }
 
 main {
-  padding: 100px;
+  padding: 100px; 
+  align-items: center;
+  justify-content: center;
   display: flex;
 }
 
@@ -446,6 +490,56 @@ main {
   }
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .search_bar {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  /* Add other responsive adjustments as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 80%;
+    margin: 30% auto;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Additional styles for smaller screens */
+}
+
+p{
+  margin: 10px;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -459,17 +553,17 @@ main {
   }
   
   .modal-content {
-    background-color: #fefefe;
+    background-color: #5d89ba;
     margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    width: 20%;
   }
   
   .close {
-    color: #aaa;
+    color: #ffffff;
     float: right;
-    font-size: 28px;
+
     font-weight: bold;
   }
   

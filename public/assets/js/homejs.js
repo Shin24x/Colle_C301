@@ -72,26 +72,57 @@ if (window.innerWidth < 1000) {
 
 function menujavapop() {
   document.getElementById("info-menujavapopup").style.display = "block";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menuhtmlpop() {
   document.getElementById("info-menuhtmlpopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
+
 }
 
 function menujspop() {
   document.getElementById("info-menujspopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menuphppop() {
   document.getElementById("info-menuphppopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menupypop() {
   document.getElementById("info-menupypopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menusqlpop() {
   document.getElementById("info-menusqlpopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
 }
 
 
