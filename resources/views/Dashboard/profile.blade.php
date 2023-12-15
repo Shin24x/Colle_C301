@@ -32,84 +32,71 @@
         </div>
       </nav>
 
-      <!-- sidebar -->
-      <nav class="sidebar">
-        <div class="menu_content">
-           <ul class="menu_items">
-            <li class="item">
-  		      &nbsp
-  			  &nbsp
-  			  &nbsp
-  			  
-              <a href="home" class="nav_link">
-                <span class="navlink_icon">
-                  <i class="bx bxs-home"></i>
-                </span>
-                <span class="navlink">Home</span>
-              </a>
-            </li>
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+         <ul class="menu_items">
+          <li class="item">
+		      &nbsp
+			  &nbsp
+			  &nbsp
+			  
+            <a href="home" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-home"></i>
+              </span>
+              <span class="navlink">Home</span>
+            </a>
+          </li>
 
-            <ul class="menu_items">
-            <li class="item">
-              <a href="library" class="nav_link">
-                <span class="navlink_icon">
-                  <i class="bx bxs-grid-alt"></i>
-                </span>
-                <span class="navlink">Library</span>
-              </a>
-            </li>
-  		
-  		<ul class="menu_items">
-            <li class="item">
-              <a href="video" class="nav_link">
-                <span class="navlink_icon">
-                  <i class="bx bxs-video"></i>
-                </span>
-                <span class="navlink">Videos</span>
-              </a>
-            </li>
-    
-  		  <ul class="menu_items">
-            <li class="item">
-              <a href="flashcards" class="nav_link">
-                <span class="navlink_icon">
-                  <i class="bx bxs-card"></i>
-                </span>
-                <span class="navlink">Flashcard</span>
-              </a>
-            </li>
-  		  
-  		  <div href="#" class="nav_link submenu_item">
-                <span class="navlink_icon">
-                  <i class="bx bx-gear"></i>
-                </span>
-                <span class="navlink">Settings</span>
-                <i class="bx bx-chevron-right arrow-left"></i>
-              </div>
-
-              <ul class="menu_items submenu">
-                <a href="#" class="nav_link sublink">Nav Sub Link</a>
-                <a href="#" class="nav_link sublink">Nav Sub Link</a>
-                <a href="#" class="nav_link sublink">Nav Sub Link</a>
-                <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              </ul>
-            </li>
-            <!-- end -->
-  		  
-          <!-- Sidebar Open / Close -->
-          <div class="bottom_content">
-            <div class="bottom expand_sidebar">
-              <span> Expand</span>
-              <i class='bx bx-log-in' ></i>
-            </div>
-            <div class="bottom collapse_sidebar">
-              <span> Collapse</span>
-              <i class='bx bx-log-out'></i>
-            </div>
+          <ul class="menu_items">
+          <li class="item">
+            <a href="library" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-grid-alt"></i>
+              </span>
+              <span class="navlink">Library</span>
+            </a>
+          </li>
+		
+		<ul class="menu_items">
+          <li class="item">
+            <a href="video" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-video"></i>
+              </span>
+              <span class="navlink">Videos</span>
+            </a>
+          </li>
+  
+		  <ul class="menu_items">
+          <li class="item">
+            <a href="flashcards" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-card"></i>
+              </span>
+              <span class="navlink">Flashcard</span>
+            </a>
+          </li>
+		
+          <!-- end -->
+		  
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
+            <i class='bx bx-log-out'></i>
           </div>
         </div>
-      </nav>
-      <main>
+      </div>
+    </nav>
+
+    <div>
+    <main>
         <main class="flex-container">
           
           <div class="profile-card">
@@ -120,16 +107,15 @@
             <p class="profile-email">rnvillavivenncio@cca.edu.ph</p>
             <p class="profile-phone">09294829411</p>
         </div>
+</div>
         <!-- Pop up edit profile -->
         
 
         
       
-    
-          <h2>Progress</h2>
+    <div>
           <div class="progress">
             <div class="chart-container">
-              <div class="progress-pie" data-value="50"></div>
               <div class="chart-box">
                 <h2 class="progress-title">Trained</h2>
                 <h1 class="progress-percentatge">73.3%</h2>
@@ -207,10 +193,12 @@
           </div>
         </main>
       </div>
+</div>
 
 
       </div>
       <!-- Editprofile -->
+      <div>
       <div class="center-container">
       
       <div class="popup" id="editProfilePicturePopup">
@@ -218,16 +206,19 @@
         <form id="profilePictureForm">
           <label for="newProfilePicture">Choose a new profile picture:</label>
           <input type="file" id="newProfilePicture" accept="image/*" onchange="displayImage(this)" required>
+          <button type="submit">Save Changes</button>
+          <button type="button" onclick="closePopupEditProfilePicture()">Discard</button>
           <br>
           <div class="preview-container">
             <img id="previewImage" alt="Preview" />
           </div>
           <br>
-          <button type="submit">Save Changes</button>
-          <button type="button" onclick="closePopupEditProfilePicture()">Discard</button>
+
         </form>
       </div>
     </div>
+    </div>
+
       
 
       <!-- JavaScript -->

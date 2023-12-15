@@ -71,6 +71,11 @@ body.dark {
   width: 100%;
 }
 
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
 .search_bar input {
   height: 100%;
   width: 100%;
@@ -99,12 +104,12 @@ body.dark {
 /* sidebar */
 .sidebar {
   background-color: var(--white-color);
-  width: 260px;
+  width: 230px;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  padding: 80px 20px;
+  padding: 80px 10px;
   z-index: 100;
   overflow-y: scroll;
   box-shadow: 0 0 1px var(--grey-color-light);
@@ -249,26 +254,22 @@ body.dark {
   width: 260px;
   cursor: pointer;
   transition: all 0.5s ease;
-  display: flex;
-  justify-content: flex-end; /* Align the button to the right */
 }
 
 .bottom {
   position: absolute;
   display: flex;
   align-items: center;
+  left: 0;
   justify-content: space-around;
   padding: 18px 0;
   text-align: center;
-  width: 260px; /* Set the width to match the side nav bar */
+  width: 100%;
   color: var(--grey-color);
-  border-top: 1px solid var(--grey-color-light);
-  background-color: var(--white-color);
 }
 
 .bottom i {
   font-size: 20px;
-  margin-right: 10px; /* Adjust the margin for spacing */
 }
 
 .bottom span {
@@ -438,8 +439,9 @@ main {
 /* difficulty pop up*/
 .popup {
   width: 380px;
-  height: 150px;
+  height: 180px;
   position: fixed;
+  padding: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -461,16 +463,12 @@ main {
   padding: 10px;
 }
 
-.popup:hover {
-  color: var(--white-color);
-  background: #FFAF4D;
-}
 
 /* Style the buttons inside the pop up */
 .popup button {
   display: inline-block;
-  margin: 13px;
-  padding: 10px;
+  margin-top: 10px;
+  padding: 6px;
   border: none;
   background-color: #5d89ba;
   color: var(--white-color);
@@ -506,11 +504,12 @@ main {
 
 .progress {
   display: flex;
+  height: 660px;
+  width: 1123px;
+  padding-left: 15px;
+  padding-right: 171px;
+  flex-wrap: wrap;
   flex-direction: column;
-  height: 1000px;
-  width: 1200px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .progress-container {
@@ -548,44 +547,45 @@ main {
 .chart-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border: 1px solid #d9d8d8;
-  border-radius: 12px;
+  justify-content: space-evenly;
   margin-top: 12px;
   align-items: center;
+  margin: auto;
 }
+
+
 
 .progress-pie {
   width: 250px !important;
   height: 250px !important;
 }
 
+
 .chart-box {
-  border-right: 1px solid #dbdbdb;
+  width: calc(33.33% - 20px);
   padding: 20px;
+  margin: 10px;
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Center vertically */
   justify-content: center;
-  width: 200px;
-  height: 200px;
   flex-direction: column;
+  text-align: center; /* Center text horizontally */
 }
 
 .progress-title {
-  color: #a5a5a5;
+  color: #000000;
   margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
 }
+
+.progress-percentatge {
+  font-size: 40px;
+}
+
 
 .box-end {
   border: none !important;
-}
-
-.sidebar {
-  width: 200px;
-  padding: 20px;
-  box-shadow: 5px 10px 8px #888888;
-  /* height: 84vh; */
 }
 
 /* Popup Edit profile */
@@ -641,6 +641,18 @@ button{
 }
 
 @media screen and (max-width: 768px) {
+  .chart-box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chart-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .progress {
     padding-left: 20px;
     padding-right: 20px;
@@ -680,16 +692,6 @@ button{
     width: 100%;
     padding: 5px;
   }
-
-.chart-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  border: 1px solid #d9d8d8;
-  border-radius: 12px;
-  margin-top: 12px;
-}
 
 .chart-box {
   width: calc(33.33% - 20px);
