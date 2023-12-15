@@ -96,22 +96,22 @@ function menusqlpop() {
 
 
 function javapop() {
-  document.getElementById("info-javapop").style.display = "block";
+  window.location.href = "library";
 }
 function htmlpop() {
-  document.getElementById("info-htmlpop").style.display = "block";
+  window.location.href = "library";
 }
 function jspop() {
-  document.getElementById("info-jspop").style.display = "block";
+  window.location.href = "library";
 }
 function phppop() {
-  document.getElementById("info-phppop").style.display = "block";
+  window.location.href = "library";
 }
 function pypop() {
-  document.getElementById("info-pypop").style.display = "block";
+  window.location.href = "library";
 }
 function sqlpop() {
-  document.getElementById("info-sqlpop").style.display = "block";
+  window.location.href = "library";
 }
 
 function closePopupjava() {

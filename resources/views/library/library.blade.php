@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Library Management System</title>
     <link rel="stylesheet" href="{{ asset('assets/css/library.css') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
+
   </head>
   <body>
   
@@ -16,7 +18,7 @@
       <div class="logo_item">
         
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="img/TS Logo.png" alt="">TECH SKILL
+        <img src="{{ asset('assets/images/TS Logo.png') }}" alt="">TECH SKILL
       </div>
 
 
@@ -28,7 +30,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="img/" alt="" class="profile" />
+        <img src="{{ asset('assets/images/.jpg') }}" alt="" class="profile" />
       </div>
     </nav>
 
@@ -78,32 +80,17 @@
               <span class="navlink">Flashcard</span>
             </a>
           </li>
-		  
-		  <div href="#" class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-gear"></i>
-              </span>
-              <span class="navlink">Settings</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-
-            <ul class="menu_items submenu">
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-            </ul>
-          </li>
+		
           <!-- end -->
 		  
         <!-- Sidebar Open / Close -->
         <div class="bottom_content">
           <div class="bottom expand_sidebar">
-            <span> Expand</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-in' ></i>
           </div>
           <div class="bottom collapse_sidebar">
-            <span> Collapse</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-out'></i>
           </div>
         </div>
@@ -111,40 +98,37 @@
     </nav>
     <main>
       <nav>
-        <div class="flex-container">
+      <div class="flex-container">
           <div class="box" onclick="menujavapop()">
-          <img src="{{ asset('assets/images/Java.png') }}">
+                <img src="{{ asset('assets/images/Java.png') }}">
                 <p>Java</p>
             </div>
             <div class="box" onclick="menuhtmlpop()">
-            <img src="{{ asset('assets/images/HTML.png') }}">
-                <p>HTML</p>
+                <img src="{{ asset('assets/images/HTML.png') }}">
+                <p>Hyper Text Markup Language</p>
             </div>
             <div class="box" onclick="menujspop()">
-            <img src="{{ asset('assets/images/Javascript.png') }}">
+              <img src="{{ asset('assets/images/Javascript.png') }}">
               <p>JavaScript</p>
-        </div>
-    </nav>
-    <nav>
-      <div class="flex-container">
-        <div class="box" onclick="menuphppop()">
-        <img src="{{ asset('assets/images/php.png') }}">
-              <p>PHP</p>
           </div>
-          <div class="box" onclick="menupypop()">
-          <img src="{{ asset('assets/images/Python.png') }}">
-              <p>Python</p>
+          <div class="box" onclick="menuphppop()">
+                <img src="{{ asset('assets/images/php.png') }}">
+                <p>PHP: Hypertext Preprocessor</p>
+            </div>
+            <div class="box" onclick="menupypop()">
+                <img src="{{ asset('assets/images/Python.png') }}">
+                <p>Python</p>
+            </div>
+            <div class="box" onclick="menusqlpop()">
+              <img src="{{ asset('assets/images/mySql.png') }}">
+              <p>Structured Query Language</p>
           </div>
-          <div class="box" onclick="menusqlpop()">
-          <img src="{{ asset('assets/images/mySql.png') }}">
-            <p>SQL</p>
         </div>
-      </div>
   </nav>
     </main>
  
  <!-- POP UP -->
- <div class="menupopup" id="info-menujavapopup"class="custom-select" style="width:500px;" align="center">
+ <div class="menupopup" id="info-menujavapopup"class="custom-select" style="width:400px;" align="center">
   
   <h1 align="center">Java</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
@@ -160,7 +144,7 @@
   
 </div>
 
-<div class="menupopup" id="info-menuhtmlpopup"class="custom-select" style="width:500px;" align="center">
+<div class="menupopup" id="info-menuhtmlpopup"class="custom-select" style="width:400px;" align="center">
   
   <h1 align="center">HTML</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
@@ -177,7 +161,7 @@
   
 </div>
 
-<div class="menupopup" id="info-menujspopup"class="custom-select" style="width:500px;" align="center">
+<div class="menupopup" id="info-menujspopup"class="custom-select" style="width:400px;" align="center">
   <h1 align="center">JavaScript</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
   <c><h2>Module</h2></c>
@@ -193,7 +177,7 @@
   
 </div>
 
-<div class="menupopup" id="info-menucpluspopup"class="custom-select" style="width:500px;" align="center">
+<div class="menupopup" id="info-menucpluspopup"class="custom-select" style="width:400px;" align="center">
   <h1 align="center">C++</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
   <c><h2>Module</h2></c>
@@ -209,7 +193,7 @@
 </div>
 
 
-<div class="menupopup" id="info-menuphppopup"class="custom-select" style="width:500px;" align="center">
+<div class="menupopup" id="info-menuphppopup"class="custom-select" style="width:400px;" align="center">
   
   <h1 align="center">PHP</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
@@ -225,7 +209,7 @@
   
 </div>
 
-<div class="menupopup" id="info-menupypopup"class="custom-select" style="width:500px;" align="center">
+<div class="menupopup" id="info-menupypopup"class="custom-select" style="width:400px;" align="center">
   
   <h1 align="center">Python</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
@@ -242,7 +226,7 @@
   
 </div>
 
-<div class="menupopup" id="info-menusqlpopup"class="custom-select" style="width:500px;" align="center">
+<div class="menupopup" id="info-menusqlpopup"class="custom-select" style="width:400px;" align="center">
   <h1 align="center">SQL</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
   <c><h2>Module</h2></c>
@@ -257,7 +241,7 @@
   
 </div> 
 
-<div class="menupopup" id="info-menucsharppopup"class="custom-select" style="width:500px;" align="center">
+<div class="menupopup" id="info-menucsharppopup"class="custom-select" style="width:400px;" align="center">
   <h1 align="center">C#</h1>
   <div style="width: 150px; height: 50px; border:1px solid black; background-color:#FFAF4D;border-radius:10px;">
   <c><h2>Module</h2></c>
@@ -359,28 +343,28 @@
 
 
      <!--for modules-->
-
-    
-    
      <div class="popup" id="info-javaMpop">
-      <button onclick="javamodulebtn1()">MODULE 1</button>
-      <button onclick="javamodulebtn2()">MODULE 2</button>
-      <button onclick="javamodulebtn3()">MODULE 3</button>
+     <h2>Java Difficulty</h2>
+      <button onclick="javamodulebtn1()">Easy</button>
+      <button onclick="javamodulebtn2()">Medium</button>
+      <button onclick="javamodulebtn3()">Hard</button>
       <button onclick="exitbtnjavaM()">Close</button>
     </div>
     
     <div class="popup" id="info-HTMLMpop">
-      <button onclick="HTMLmodulebtn1()">MODULE 1</button>
-      <button onclick="HTMLmodulebtn2()">MODULE 2</button>
-      <button onclick="HTMLmodulebtn3()">MODULE 3</button>
+    <h2>HTML Difficulty</h2>
+      <button onclick="HTMLmodulebtn1()">Easy</button>
+      <button onclick="HTMLmodulebtn2()">Medium</button>
+      <button onclick="HTMLmodulebtn3()">Hard</button>
 	  <button onclick="exitbtnHTMLM()">Close</button>
       
     </div>
     
     <div class="popup" id="info-javascriptMpop">
-      <button onclick="javascriptmodulebtn1()">MODULE 1</button>
-      <button onclick="javascriptmodulebtn2()">MODULE 2</button>
-      <button onclick="javascriptmodulebtn3()">MODULE 3</button>
+    <h2>JavaScript Difficulty</h2>
+      <button onclick="javascriptmodulebtn1()">Easy</button>
+      <button onclick="javascriptmodulebtn2()">Medium</button>
+      <button onclick="javascriptmodulebtn3()">Hard</button>
 	  <button onclick="exitbtnjavascriptM()">Close</button>
       
     </div>
@@ -388,27 +372,29 @@
     </div>
     
     <div class="popup" id="info-phpMpop">
-      <button onclick="phpmodulebtn1()">MODULE 1</button>
-      <button onclick="phpmodulebtn2()">MODULE 2</button>
-      <button onclick="phpmodulebtn3()">MODULE 3</button>
-
-	  <button onclick="exitbtnphpM()">Close</button>
+    <h2>PHP Difficulty</h2>
+      <button onclick="phpmodulebtn1()">Easy</button>
+      <button onclick="phpmodulebtn2()">Medium</button>
+      <button onclick="phpmodulebtn3()">Hard</button>
+      <button onclick="exitbtnphpM()">Close</button>
       
     </div>
 
     <div class="popup" id="info-pyMpop">
-      <button onclick="pymodulebtn1()">MODULE 1</button>
-      <button onclick="pymodulebtn2()">MODULE 2</button>
-      <button onclick="pymodulebtn3()">MODULE 3</button>
+    <h2>Python Difficulty</h2>
+      <button onclick="pymodulebtn1()">Easy</button>
+      <button onclick="pymodulebtn2()">Medium</button>
+      <button onclick="pymodulebtn3()">Hard</button>
 
 	  <button onclick="exitbtnpyM()">Close</button>
       
     </div>
 
     <div class="popup" id="info-sqlMpop">
-      <button onclick="sqlmodulebt1()">MODULE 1</button>
-      <button onclick="sqlmodulebt2()">MODULE 2</button>
-      <button onclick="sqlmodulebt3()">MODULE 3</button>
+    <h2>SQL Difficulty</h2>
+      <button onclick="sqlmodulebt1()">Easy</button>
+      <button onclick="sqlmodulebt2()">Medium</button>
+      <button onclick="sqlmodulebt3()">Hard</button>
 
 	  <button onclick="exitbtnsqlM()">Close</button>
       

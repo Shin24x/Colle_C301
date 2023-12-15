@@ -7,8 +7,8 @@
 
 		<title>Flashcards</title>
         <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/css/library.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/css/library2.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/css/flashcard.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/css/flashcard2.css') }}" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>  
 <body >

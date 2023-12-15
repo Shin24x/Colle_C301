@@ -36,6 +36,9 @@ Route::view('/library', 'library/library',[
 Route::view('/flashcards', 'flashcards/flashcards',[
     'title' => 'flashcards'
 ]);
+Route::view('/profile', 'Dashboard/profile',[
+    'title' => 'profile'
+]);
 
 Route::view('/html', 'Video/html',[
     'title' => 'html'
@@ -125,8 +128,8 @@ Route::view('/quizhtmleasy', 'quizzes/html/qhtmleasy',[
 Route::view('/quizhtmlmedium', 'quizzes/html/qhtmlmedium',[
     'title' => 'quizhtmlmedium'
 ]);
-Route::view('/quizhtmlmhard', 'quizzes/html/qhtmlhard',[
-    'title' => 'quizhtmlmhard'
+Route::view('/quizhtmlhard', 'quizzes/html/qhtmlhard',[
+    'title' => 'quizhtmlhard'
 ]);
 
 Route::view('/quizjavaeasy', 'quizzes/html/qjavaeasy',[

@@ -30,9 +30,7 @@ function calculateScore() {
       if (document.getElementById('correct10').checked) {
         score++;
       }
-
-
-    
+      
     document.getElementById('scoreDisplay').innerHTML = "Your score is: " + score;
     document.getElementById('myModal').style.display = "block";
   }
@@ -40,7 +38,8 @@ function calculateScore() {
   function closeModal() {
     document.getElementById('myModal').style.display = "none";
   }
-  
+
+
   const body = document.querySelector("body");
 const darkLight = document.querySelector("#darkLight");
 const sidebar = document.querySelector(".sidebar");

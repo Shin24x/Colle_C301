@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Library Management System</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/video.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
   </head>
   <body>
   
@@ -16,7 +17,7 @@
       <div class="logo_item">
         
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="img/TS Logo.png" alt="">TECH SKILL
+        <img src="{{ asset('assets/images/TS Logo.png') }}" alt="">TECH SKILL
       </div>
 
 
@@ -28,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="img/" alt="" class="profile" />
+       <img src="{{ asset('assets/images/.jpg') }}" alt="" class="profile" />
       </div>
     </nav>
 
@@ -68,32 +69,27 @@
               <span class="navlink">Videos</span>
             </a>
           </li>
-		  
-		  <div href="#" class="nav_link submenu_item">
+  
+		  <ul class="menu_items">
+          <li class="item">
+            <a href="flashcards" class="nav_link">
               <span class="navlink_icon">
-                <i class="bx bx-gear"></i>
+                <i class="bx bxs-card"></i>
               </span>
-              <span class="navlink">Settings</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-
-            <ul class="menu_items submenu">
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-            </ul>
+              <span class="navlink">Flashcard</span>
+            </a>
           </li>
+		
           <!-- end -->
 		  
         <!-- Sidebar Open / Close -->
         <div class="bottom_content">
           <div class="bottom expand_sidebar">
-            <span> Expand</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-in' ></i>
           </div>
           <div class="bottom collapse_sidebar">
-            <span> Collapse</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-out'></i>
           </div>
         </div>
@@ -102,35 +98,31 @@
     <main>
       <nav>
         <div class="flex-container">
-          <div class="box" onclick="javavid()">
+          <div class="box" onclick="menujavapop()">
                 <img src="{{ asset('assets/images/Java.png') }}">
-                <a href="java">Java</a>
+                <p>Java</p>
             </div>
-            <div class="box" onclick="htmlvid()">
+            <div class="box" onclick="menuhtmlpop()">
                 <img src="{{ asset('assets/images/HTML.png') }}">
-                <a href="html">Hyper Text Markup Language</a>
+                <p>Hyper Text Markup Language</p>
             </div>
-            <div class="box" onclick="jsvid()">
+            <div class="box" onclick="menujspop()">
               <img src="{{ asset('assets/images/Javascript.png') }}">
-              <a href="javascript">JavaScript</a>
+              <p>JavaScript</p>
+          </div>
+          <div class="box" onclick="menuphppop()">
+                <img src="{{ asset('assets/images/php.png') }}">
+                <p>PHP: Hypertext Preprocessor</p>
+            </div>
+            <div class="box" onclick="menupypop()">
+                <img src="{{ asset('assets/images/Python.png') }}">
+                <p>Python</p>
+            </div>
+            <div class="box" onclick="menusqlpop()">
+              <img src="{{ asset('assets/images/mySql.png') }}">
+              <p>Structured Query Language</p>
           </div>
         </div>
-    </nav>
-    <nav>
-      <div class="flex-container">
-        <div class="box" onclick="menuphppop()">
-              <img src="{{ asset('assets/images/php.png') }}">
-              <a href="php">PHP: Hypertext Preprocessor</a>
-          </div>
-          <div class="box" onclick="menupypop()">
-              <img src="{{ asset('assets/images/Python.png') }}">
-              <a href="python">Python</a>
-          </div>
-          <div class="box" onclick="menusqlpop()">
-            <img src="{{ asset('assets/images/mySql.png') }}">
-            <a href="mysql">Structured Query Language</a>
-        </div>
-      </div>
   </nav>
     </main>
 
